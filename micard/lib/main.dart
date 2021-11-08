@@ -8,45 +8,45 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Layout Challenge',
-      home: MyHomePage(),
+      title: 'MiCard',
+      home: MiCard(),
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
+class MiCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.teal,
       body: SafeArea(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Container(
-              width: 100.0,
-              color: Colors.red,
+        child: Column(
+          children: const [
+            CircleAvatar(
+              backgroundImage: AssetImage('images/thanos.jpeg'),
+              radius: 50.0,
             ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  color: Colors.yellow,
-                  width: 100.0,
-                  height: 100.0,
-                ),
-                Container(
-                  color: Colors.lightGreen,
-                  width: 100.0,
-                  height: 100.0,
-                ),
-              ],
+            Text(
+              'Thanoss',
+              style: TextStyle(
+                color: Colors.white,
+                fontFamily: 'BadScript',
+                fontSize: 30.0,
+                fontWeight: FontWeight.w800,
+              ),
             ),
-            Container(
-              width: 100.0,
-              color: Colors.blue,
+            Text(
+              'Supervillain',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 18.0,
+                fontFamily: 'Montserrat',
+              ),
             ),
+            Divider(color: Colors.white,),
+            // line
+            // phone number
+            // email
           ],
         ),
       ),
