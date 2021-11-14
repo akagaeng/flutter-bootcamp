@@ -5,3 +5,4 @@
 * [Dicee](./dicee_flutter)
 * [Magic 8 Ball](./magic_8_ball)
 * [Xylophone](./xylophone)
+* [Quizzler](./quizzler)
